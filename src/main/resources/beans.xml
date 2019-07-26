@@ -5,14 +5,6 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <property name="actorName" value="Berlin"></property>
-        <property name="gender" value="male"></property>
-        <property name="age" value="30"></property>
-    </bean>
 
-    <bean id="movie" class="com.stackroute.domain.Movie">
-        <property name="actorObject" ref="actor"></property>
-    </bean>
 
 </beans>

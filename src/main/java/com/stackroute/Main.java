@@ -25,21 +25,5 @@ public class Main {
 //        System.out.println(movieRef.getActorObject().getAge());
 
 
-        Resource resource = new ClassPathResource("beans.xml");
-        BeanFactory factory = new XmlBeanFactory(resource);
-
-        Actor actorRef1 = factory.getBean("actor", Actor.class);
-
-        System.out.println(actorRef1.getAge());
-        System.out.println(actorRef1.getGender());
-        System.out.println(actorRef1.getAge());
-
-        Movie movieRef1 = factory.getBean("movie",Movie.class);
-
-        System.out.println(movieRef1.getActorObject().getName());
-        System.out.println(movieRef1.getActorObject().getGender());
-        System.out.println(movieRef1.getActorObject().getAge());
-
-
     }
 }
