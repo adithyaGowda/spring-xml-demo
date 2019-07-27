@@ -23,8 +23,8 @@
         <constructor-arg type="int" value="26"></constructor-arg>
     </bean>
 
-    <bean name="movie1,movie2" class="com.stackroute.domain.Movie">
-        <constructor-arg name="actorObject" ref="actor1"></constructor-arg>
+    <bean name="movie" class="com.stackroute.domain.Movie" autowire="byName">
+
     </bean>
 
 

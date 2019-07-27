@@ -23,13 +23,11 @@ public class Main {
 
 
 
-        Movie movieRef1 = context.getBean("movie1",Movie.class);
-        System.out.println(movieRef1.toString());
+        Movie movieRef = context.getBean("movie",Movie.class);
 
-        Movie movieRef2 = context.getBean("movie2",Movie.class);
-        System.out.println(movieRef2.toString());
+        System.out.println(movieRef.toString());
 
-        System.out.println(movieRef1 == movieRef2);
+
 
     }
 }
