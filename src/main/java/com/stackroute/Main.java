@@ -30,6 +30,6 @@ public class Main {
         System.out.println(movieRef2.toString());
 
         System.out.println(movieRef1 == movieRef2);
-        
+
     }
 }
