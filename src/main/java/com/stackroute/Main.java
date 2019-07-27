@@ -13,13 +13,13 @@ public class Main {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Actor actorRef1 = context.getBean("actor1", Actor.class);
-        Actor actorRef2 = context.getBean("actor2", Actor.class);
-        Actor actorRef3 = context.getBean("actor3", Actor.class);
+        Actor actorRef = context.getBean("actor", Actor.class);
+//        Actor actorRef2 = context.getBean("actor2", Actor.class);
+//        Actor actorRef3 = context.getBean("actor3", Actor.class);
 
-        System.out.println(actorRef1.toString());
-        System.out.println(actorRef2.toString());
-        System.out.println(actorRef3.toString());
+        System.out.println(actorRef.toString());
+//        System.out.println(actorRef2.toString());
+//        System.out.println(actorRef3.toString());
 
 
 
