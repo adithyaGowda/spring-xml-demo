@@ -89,3 +89,6 @@ Override the required methods to print out messages.
 Define BeanLifecycleDemoBean as a bean in beans.xml.
 Run the application and observe the result.
 Push the code to bean-post-processor branch. 
+
+
+
