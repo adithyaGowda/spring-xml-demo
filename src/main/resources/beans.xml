@@ -5,27 +5,27 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="Tom"></constructor-arg>
-        <constructor-arg name="gender" value="male"></constructor-arg>
-        <constructor-arg name="age" value="35"></constructor-arg>
-    </bean>
+<!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
+<!--        <constructor-arg name="name" value="Tom"></constructor-arg>-->
+<!--        <constructor-arg name="gender" value="male"></constructor-arg>-->
+<!--        <constructor-arg name="age" value="35"></constructor-arg>-->
+<!--    </bean>-->
 
-    <bean id="actor2" class="com.stackroute.domain.Actor">
-        <constructor-arg index="0" value="Henry"></constructor-arg>
-        <constructor-arg index="1" value="male"></constructor-arg>
-        <constructor-arg index="2" value="40"></constructor-arg>
-    </bean>
+<!--    <bean id="actor2" class="com.stackroute.domain.Actor">-->
+<!--        <constructor-arg index="0" value="Henry"></constructor-arg>-->
+<!--        <constructor-arg index="1" value="male"></constructor-arg>-->
+<!--        <constructor-arg index="2" value="40"></constructor-arg>-->
+<!--    </bean>-->
 
-    <bean id="actor3" class="com.stackroute.domain.Actor">
-        <constructor-arg type="String" value="Mary"></constructor-arg>
-        <constructor-arg type="String" value="female"></constructor-arg>
-        <constructor-arg type="int" value="26"></constructor-arg>
-    </bean>
+<!--    <bean id="actor3" class="com.stackroute.domain.Actor">-->
+<!--        <constructor-arg type="String" value="Mary"></constructor-arg>-->
+<!--        <constructor-arg type="String" value="female"></constructor-arg>-->
+<!--        <constructor-arg type="int" value="26"></constructor-arg>-->
+<!--    </bean>-->
 
-    <bean name="movie1" class="com.stackroute.domain.Movie" autowire="byName">
+<!--    <bean name="movie1" class="com.stackroute.domain.Movie" autowire="byName">-->
 
-    </bean>
+<!--    </bean>-->
 
 
 <!--    <bean name="movie2" class="com.stackroute.domain.Movie" autowire="byType">-->
@@ -34,6 +34,10 @@
 
     <bean id="beanLifeCycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
         <property name="message" value="Hello world"></property>
+    </bean>
+
+    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello world, welcome to programming"></property>
     </bean>
 
 
